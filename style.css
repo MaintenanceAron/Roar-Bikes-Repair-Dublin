@@ -1,0 +1,201 @@
+/* html{
+    height: 100%;
+} */
+body{
+    background-image: url(images/image-lion-background.png);
+    background-image:linear-gradient(#fc5e55, #fa4083);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.125rem;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.container{
+    width: 1024px;
+    min-height: 300px;
+    /* below makes the container center */
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* horizontal line */
+    /* you can also use<hr> but is an old way */
+    border-bottom: 1px solid lightgray;
+}    
+main{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.main2{
+    min-height: 300px;
+    padding-top: 50px;
+}
+.cards{
+    min-height: 300px;
+    /* align the cards horizontally */
+    display: flex;
+    /* space between cards */
+    justify-content: space-between;
+    text-align: center;
+}
+.card1{
+    background-image: url(images/image-background-card1.jpg);
+    min-height: 300px;
+    width: 30%;
+    background-size: cover;
+}
+.card2{
+    background-image: url(images/image-background-card2.jpg);
+    min-height: 300px;
+    width: 30%;
+    background-size: cover;
+}
+.card3{
+    background-image: url(images/image-background-card3.jpg);
+    min-height: 300px;
+    width: 30%;
+    background-size: cover;
+}
+.herobox1{
+    flex: 2;
+}
+.herobox2{
+    flex: 1;
+}
+h1{
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+h2{
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.p{
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    margin: 10px 30px 20px 30px;
+    
+}
+i{
+    font-size: 100px;
+    margin-top: 30px;
+}
+.mybutton{
+    background-color: white;
+    color: #fa4083;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 11px 25px; 
+    /* rounded corners */
+    border-radius: 12px 0px;
+    box-shadow: 5px 5px blueviolet;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.mybutton:hover{
+    background-color: #6ce753;
+    transition-duration: 1s;
+}
+.navbutton:hover{
+    background-color: rgb(183, 236, 147);
+}
+a.mybutton{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+nav a.mybutton{
+    margin-left: 30px;
+}
+.navbutton{
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 11px 25px;
+    display: inline-block;
+    position: relative;
+}
+.testimonials{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.tbox{
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+i.quote{
+    font-size: 20px;
+    color: #17a2b8;
+    padding: auto;
+  }
+
+  .dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .navbutton:hover .dropdown{
+    display: block;
+  }
+.navbutton .dropdown .navbutton{
+    width: 120px;
+    /* background-color: white; */
+    border: none;
+    border-radius: 10px 0px;   
+}
+.inputwrapper {
+    display: flex;
+    margin-bottom: 30px;
+}
+input[type=text], textarea {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif; 
+    flex: 1;
+	outline: none;
+  }
+
+input[type=checkbox], input[type=radio]  {
+    margin-right: 10px;
+  }
+
+.margin-left-a {
+	margin-left: 10px;
+}
+
+.inputwrapper select{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+input[type=submit]{
+    height: 50px;
+    width: 200px;
+}

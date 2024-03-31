@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us </title>
+    <!-- this is my adding  -->
+    <meta name="description" content="type what you need to see atleast 120 characters">
+    <!-- This is my css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome  -->
+    <script src="https://kit.fontawesome.com/19c935d990.js" crossorigin="anonymous"></script>
+     <!-- cloudflare -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- this is a container -->
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-roar-bikes.png" alt="Logo for roar bikes">
+                </a>
+            </div>
+            <nav>
+               <div class="navbutton"><a href="#">Book Online</a>
+
+                <div class="dropdown">
+                    <div class="navbutton"><a href="#"></a>Onsite Service</div>
+                    <div class="navbutton"><a href="#"></a>Parts Delivery</div>
+                    <div class="navbutton"><a href="#"></a>Reuest Callback</div>
+                </div>
+
+            </div>
+               
+               <div class="navbutton">
+                <a href="#">About</a>
+            </div>
+               <div class="navbutton">
+                <a href="contact-us.html">Contact</a>
+            </div>
+            </nav>
+
+        </header>
+
+            <div class="main2">
+                <h1>Contact us.</h1>
+                <p>
+                    Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.
+                </p>
+
+                <form action="mail.php" method="post" class="myform">
+                
+                    <div class="inputwrapper">
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    
+                    <div class="inputwrapper">
+                        <input type="text" id="email" name="email"
+                        placeholder="Your Email">
+                        
+                    </div>
+                    
+                    <div class="inputwrapper">
+                        <textarea name="message" id="message" rows="10" maxlength="10" placeholder="Subject"></textarea>
+                    </div>
+                    
+                    <div class="inputwrapper">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes-please" checked>
+                        <label for="newsletter">Sign up for our email newsletter</label>
+                    </div>
+                
+                    <p>Preferred contact method</p>
+                    <div class="inputwrapper">                          
+                        <input type="radio" name="contact-pref" id="Phone" value="Phone">
+                        <label for="Phone" class="margin-left-a">Phone</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="contact-pref" id="Email" value="Email">
+                        <label for="Email" class="margin-left-a">Email</label>
+                    </div>
+
+                    <div class="inputwrapper">
+                        <select name="County" id="County">
+                            <option value="Not choosen">Not choosen</option>
+                            <option value="Lamerick">Lamerick</option>
+                            <option value="Galoway">Galoway</option>
+                            <option value="Dublin">Dublin</option>
+                            
+                        </select>                        
+                    </div>
+                
+                    <div class="inputwrapper"> 
+                        <input type="submit" value="Submit" class="mybutton">
+                    </div>
+                
+                </form>
+            </div>
+    </div>
+        
+</body>
+</html>
